@@ -1,0 +1,6 @@
+sync:
+  services:
+    fargate-web-svc:
+      production-website:
+        branch: main
+        spec: ecs-static-website/service-sync.yaml
