@@ -1,0 +1,4 @@
+proton: ServiceSpec
+instances:
+  - name: production-website
+    environment: fargate-prod-env
