@@ -1,4 +1,7 @@
-FROM public.ecr.aws/nginx/nginx:1.21
+FROM public.ecr.aws/docker/library/httpd:latest
+
+# COPY index.html
+RUN echo "Hello AWS Training! (5/23)" > /usr/local/apache2/htdocs/index.html
+
 EXPOSE 80
-# COPY index.html /usr/share/nginx/html
-RUN echo "Hello AWS Training! (5/23)" > /usr/share/nginx/html/index.html
+
