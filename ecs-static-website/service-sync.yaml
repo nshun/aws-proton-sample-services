@@ -4,7 +4,7 @@ pipeline:
   dockerfile: "Dockerfile"
 instances:
 - name: "production-website"
-  environment: "fargate-prod-env"
+  environment: "fargate-env-prod"
   spec:
     port: 80
     desired_count: 2
